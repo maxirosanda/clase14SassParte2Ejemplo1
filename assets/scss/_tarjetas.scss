@@ -1,0 +1,25 @@
+.tarjeta{
+    display: map-get($tarjeta, displey );
+    margin: map-get($tarjeta , margen );
+    align-items: center;
+    @include propidadesPrincipal(rgb(255, 255, 255),"blanco" ,auto ,auto );
+    .tarjeta__texto{
+        margin-left: map-get($tarjeta , textoMargenIzq );
+        h4{
+            margin-bottom: 10px;
+        }
+       
+    }
+    button {
+        margin-top: 10px;
+       @extend .boton;
+       @include propidadesPrincipal(map-get($tarjeta , botonColor),"blanco" ,100px ,auto );
+    }
+
+}
+
+.tarjetaVertical{
+    @extend .tarjeta;
+    flex-direction: column;
+    @include propidadesPrincipal(rgb(255, 255, 255),"blanco" ,250px ,auto );
+}
