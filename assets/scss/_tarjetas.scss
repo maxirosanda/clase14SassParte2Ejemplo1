@@ -1,10 +1,12 @@
+
+
 .tarjeta{
-    display: map-get($tarjeta, displey );
-    margin: map-get($tarjeta , margen );
+    display: flex;
+    margin: 5px;
     align-items: center;
-    @include propidadesPrincipal(rgb(255, 255, 255),"blanco" ,auto ,auto );
+    @include propidadesPrincipal(rgb(255, 255, 255),modoclaro ,auto ,auto );
     .tarjeta__texto{
-        margin-left: map-get($tarjeta , textoMargenIzq );
+        margin-left:10px;
         h4{
             margin-bottom: 10px;
         }
@@ -13,7 +15,7 @@
     button {
         margin-top: 10px;
        @extend .boton;
-       @include propidadesPrincipal(map-get($tarjeta , botonColor),"blanco" ,100px ,auto );
+       @include propidadesPrincipal(rgb(4, 0, 255),modoOscuro ,100px ,auto );
     }
 
 }

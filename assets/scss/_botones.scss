@@ -9,6 +9,6 @@
 
 .boton-primario{
     @extend .boton;
-    @include propidadesPrincipal(rgb(226, 218, 218), oscuro ,100px ,auto )
+    @include propidadesPrincipal(rgb(226, 218, 218), modoOscuro ,100px ,auto )
 
 }

@@ -157,7 +157,7 @@
 
 .boton-primario {
   background-color: #e2dada;
-  color: black;
+  color: white;
   width: 100px;
   height: auto;
 }
@@ -167,7 +167,7 @@
   margin: 5px;
   align-items: center;
   background-color: white;
-  color: white;
+  color: black;
   width: auto;
   height: auto;
 }
@@ -191,7 +191,7 @@
 .tarjetaVertical {
   flex-direction: column;
   background-color: white;
-  color: white;
+  color: black;
   width: 250px;
   height: auto;
 }

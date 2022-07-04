@@ -1,10 +1,12 @@
 @mixin propidadesPrincipal ($bg-color,$dark,$ancho,$alto) {
     background-color:$bg-color ;
-    @if $dark == "blanco" {
+    @if $dark == modoOscuro {
         color: white;
+    }@else if(modoClaro){
+        color: black;
     }
     @else {
-        color:black
+       color: $color-primario;
     }
     width: $ancho;
     height: $alto;
